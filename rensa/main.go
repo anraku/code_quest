@@ -24,7 +24,9 @@ func main() {
 
 	usedFlag = make(map[string]bool)
 	// 詠唱開始！
-	aria(0)
+	for i := 0; i < len(spellList); i++ {
+		aria(i)
+	}
 }
 
 // ファイルからデータ読み込み
@@ -59,5 +61,5 @@ func aria(i int) {
 
 // 呪文のリストを問題回答用のテキストに変換
 func output(list []string) {
-	fmt.Println(strings.Join(list, " "))
+	fmt.Printf("出力結果: %v\n", strings.Join(list, " "))
 }
