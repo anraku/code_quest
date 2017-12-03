@@ -1,4 +1,4 @@
-// CODEQUESTの毒沼の試練をクリアするために作ったプログラム
+// CODEQUESTの連鎖の試練をクリアするために作ったプログラム
 package main
 
 import (
